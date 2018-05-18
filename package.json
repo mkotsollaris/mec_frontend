@@ -1,0 +1,22 @@
+{
+  "name": "mec_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkotsollaris/mec_frontend.git"
+  },
+  "author": "Menelaos Kotsollaris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkotsollaris/mec_frontend/issues"
+  },
+  "homepage": "https://github.com/mkotsollaris/mec_frontend#readme",
+  "devDependencies": {
+    "@angular/cli": "^6.0.3"
+  }
+}
