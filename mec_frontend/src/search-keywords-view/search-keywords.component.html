@@ -1,5 +1,19 @@
 keywords: <input type="text" [(ngModel)]="keywords"><button (click)="searchKeywords(keywords)">Search</button>
-<img src="TODO" alt="Mountain View" width="200" height="377" #img1>
-<img src="TODO" alt="Mountain View" width="200" height="377" #img2>
-<img src="TODO" alt="Mountain View" width="200" height="377" #img3>
+<br>
+<h2>Results:</h2>
+<br>
+<div *ngFor="let product of searchService.results; let i = index">
+    <h1>Item {{i+1}}:</h1>
+    <img src="{{product.productUrl}}" height="100">
+    <br>
+    Dominant Colours:
+    <br>
+    <div *ngFor="let dominantColour of product.dominantColours" type="color" value="dominantColour">
+        <input type="color" value="{{dominantColour}}">
+    </div>
+    <hr>
+    <br>
+</div>
+
+
 <!-->TODO Dynamically add these views https://medium.com/@caroso1222/angular-pro-tip-how-to-dynamically-create-components-in-body-ba200cc289e6 !-->

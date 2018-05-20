@@ -1,3 +1,4 @@
+import { SearchService } from './../services/search-keyword.service';
 import { SearchKeywordsComponent } from './search-keywords.component';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -6,9 +7,9 @@ import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
-   imports: [FormsModule],
+   imports: [BrowserModule, FormsModule],
    exports: [SearchKeywordsComponent],
-   declarations: [SearchKeywordsComponent],
-   providers: [],
+   declarations: [SearchKeywordsComponent,],
+   providers: [SearchService],
 })
 export class SearchKeywordsModule { }
