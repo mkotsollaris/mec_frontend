@@ -6,9 +6,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
-const appRoutes: Routes = [
-    { path: '', redirectTo: '', pathMatch: 'full' }
-];
+// const appRoutes: Routes = [
+
+//     {path: "/:id", component: SearchKeywordsComponent}
+
+// ];
 
 
 @NgModule({

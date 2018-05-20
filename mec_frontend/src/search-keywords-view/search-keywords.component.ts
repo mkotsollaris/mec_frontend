@@ -21,8 +21,9 @@ export class SearchKeywordsComponent {
     let response = this.searchService.searchKeywords(this.keywords);
     response.then(response => {
       //SomewhereElse
-      // this.router.navigate(['./'+this.keywords]);
-      this.router.navigate(['/SomewhereElse']);
+      console.log('keyword: ',this.keywords);
+      this.router.navigate(['./'+this.keywords]);
+      // this.router.navigate(['/SomewhereElse']);
 
     });
   }

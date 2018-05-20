@@ -9,8 +9,10 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 const appRoutes: Routes = [
-    { path: 'SomewhereElse', component: SearchKeywordsComponent },
-    { path: '**', redirectTo: '', pathMatch: 'full' }
+      {path: ":id", component: SearchKeywordsComponent}
+
+    // { path: 'SomewhereElse', component: SearchKeywordsComponent },
+    // { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
