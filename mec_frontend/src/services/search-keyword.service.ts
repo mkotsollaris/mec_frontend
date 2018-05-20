@@ -20,9 +20,9 @@ export class SearchService {
       .toPromise()
       .then(
         res => { // Success
-          console.log('',res.json());
+          if(res['_body']) {
           this.results = res.json();
-          // return resolve();
+          }
           resolve();
         }
       );

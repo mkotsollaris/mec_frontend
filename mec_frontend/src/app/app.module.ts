@@ -9,9 +9,9 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 const appRoutes: Routes = [
-      {path: ":id", component: SearchKeywordsComponent}
+      {path: ":id", component: SearchKeywordsComponent},
 
-    // { path: 'SomewhereElse', component: SearchKeywordsComponent },
+
     // { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
@@ -25,7 +25,6 @@ const appRoutes: Routes = [
     SearchKeywordsModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
     )
   ],
   providers: [SearchService],
