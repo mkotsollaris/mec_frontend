@@ -1,5 +1,6 @@
 import { SearchService } from './../services/search-keyword.service';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-keywords',
@@ -9,16 +10,20 @@ import { Component, Input } from '@angular/core';
 export class SearchKeywordsComponent {
 
   @Input()
-  keywords = 'phone';
+  keywords = '';
 
   constructor(
     private searchService: SearchService,
+    private router: Router
   ) { }
 
   searchKeywords() {
     let response = this.searchService.searchKeywords(this.keywords);
     response.then(response => {
-      console.log('response: ', this.searchService.results);
+      //SomewhereElse
+      // this.router.navigate(['./'+this.keywords]);
+      this.router.navigate(['/SomewhereElse']);
+
     });
   }
 
