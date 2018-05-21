@@ -1,9 +1,8 @@
 # mec_frontend
 
 <ol>
-<li>
-<li> npm install
-<li> npm start
+  <li>`npm install`</li>
+  <li>`npm start`</li>
 </ol>
 
 `Application should start at http://localhost:4200/`.
